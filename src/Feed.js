@@ -16,6 +16,7 @@ function Feed() {
 
       {/* Post */}
       <Post />
+      
       <Post />
     </div>
   );
