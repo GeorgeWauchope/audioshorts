@@ -14,6 +14,8 @@ import { Button } from "@material-ui/core";
 
 function sidebar() {
   return (
+
+    
     <div className="sidebar">
       <TwitterIcon className="sidebar_twitterIcon" />
 
@@ -26,13 +28,6 @@ function sidebar() {
       <SidebarOption Icon={PersonIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
 
-      {/* SidebarOption */}
-      {/* SidebarOption */}
-      {/* SidebarOption */}
-      {/* SidebarOption */}
-      {/* SidebarOption */}
-      {/* SidebarOption */}
-      {/* SidebarOption */}
 
       <Button variant="outlined" className="sidebar_button" fullWidth>
         Record Audio

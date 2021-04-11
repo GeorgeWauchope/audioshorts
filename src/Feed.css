@@ -5,7 +5,6 @@
   overflow-y: scroll;
 }
 
-
 .feed_header {
   position: sticky;
   top: 0;
@@ -29,4 +28,10 @@
 .feed {
   -ms-overflow-style: none; /* IE & Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 800px) {
+  .feed {
+    flex: 1;
+  }
 }

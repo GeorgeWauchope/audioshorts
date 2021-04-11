@@ -9,7 +9,6 @@
   border-left: none;
 }
 
-
 .sidebar_twitterIcon {
   color: var(--audioshorts-color);
   font-size: 30px !important;
@@ -26,4 +25,10 @@
   border-radius: 30px !important;
   height: 50px !important;
   margin-top: 20px !important;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
 }
