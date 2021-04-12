@@ -14,8 +14,6 @@ import { Button } from "@material-ui/core";
 
 function sidebar() {
   return (
-
-    
     <div className="sidebar">
       <TwitterIcon className="sidebar_twitterIcon" />
 
@@ -28,9 +26,8 @@ function sidebar() {
       <SidebarOption Icon={PersonIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
 
-
       <Button variant="outlined" className="sidebar_button" fullWidth>
-        Record Audio
+        Post Tweet
       </Button>
     </div>
   );
