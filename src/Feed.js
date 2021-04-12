@@ -30,7 +30,7 @@ function Feed() {
             username={post.username}
             verified={post.verified}
             text={post.text}
-            image={post.image}
+            // image={post.image}
             avatar={post.avatar}
           />
         ))}

@@ -5,7 +5,7 @@ import db from "./firebase";
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState("");
-  const [tweetImage, setTweetImage] = useState("");
+  // const [tweetImage, setTweetImage] = useState("");
 
   const sendTweet = (e) => {
     e.preventDefault();
@@ -14,20 +14,20 @@ function TweetBox() {
       username: "george_wauchope",
       verified: true,
       text: tweetMessage,
-      image: tweetImage,
+      // image: tweetImage,
       avatar:
-        "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png",
+        "https://media-exp1.licdn.com/dms/image/C4E03AQGRZpd8tp2crw/profile-displayphoto-shrink_200_200/0/1568691234283?e=1623283200&v=beta&t=7OWLAdJ52gVVdL-hon2_7iAT8dAP3gteogtTUtOXY4I",
     });
 
     setTweetMessage("");
-    setTweetImage("");
+    // setTweetImage("");
   };
 
   return (
     <div className="tweetBox">
       <form>
         <div className="tweetBox_input">
-          <Avatar src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_user-512.png" />
+          <Avatar src="https://media-exp1.licdn.com/dms/image/C4E03AQGRZpd8tp2crw/profile-displayphoto-shrink_200_200/0/1568691234283?e=1623283200&v=beta&t=7OWLAdJ52gVVdL-hon2_7iAT8dAP3gteogtTUtOXY4I" />
           <input
             onChange={(e) => setTweetMessage(e.target.value)}
             value={tweetMessage}
@@ -35,13 +35,15 @@ function TweetBox() {
             type="text"
           ></input>
         </div>
-        <input
+
+        {/* <input
           value={tweetImage}
           onChange={(e) => setTweetImage(e.target.value)}
           className="tweetBox_imageInput"
           placeholder="Optional: Enter image URL"
           type="text"
-        ></input>
+        ></input> */}
+
         <Button
           onClick={sendTweet}
           type="submit"
